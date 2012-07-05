@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F482A00D15A6217E00D92B2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A00C15A6217E00D92B2B /* UIKit.framework */; };
+		F482A00F15A6217E00D92B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A00E15A6217E00D92B2B /* Foundation.framework */; };
+		F482A01115A6217E00D92B2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A01015A6217E00D92B2B /* CoreGraphics.framework */; };
+		F482A01315A6217E00D92B2B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A01215A6217E00D92B2B /* GLKit.framework */; };
+		F482A01515A6217E00D92B2B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A01415A6217E00D92B2B /* OpenGLES.framework */; };
+		F482A01B15A6217E00D92B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F482A01915A6217E00D92B2B /* InfoPlist.strings */; };
+		F482A01D15A6217E00D92B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F482A01C15A6217E00D92B2B /* main.m */; };
+		F482A02115A6217E00D92B2B /* DIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F482A02015A6217E00D92B2B /* DIAppDelegate.m */; };
+		F482A02415A6217E00D92B2B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F482A02215A6217E00D92B2B /* MainStoryboard_iPhone.storyboard */; };
+		F482A02715A6217E00D92B2B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F482A02515A6217E00D92B2B /* MainStoryboard_iPad.storyboard */; };
+		F482A02915A6217F00D92B2B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F482A02815A6217F00D92B2B /* Shader.fsh */; };
+		F482A02B15A6217F00D92B2B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F482A02A15A6217F00D92B2B /* Shader.vsh */; };
+		F482A02E15A6217F00D92B2B /* DIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F482A02D15A6217F00D92B2B /* DIViewController.m */; };
+		F482A03615A6217F00D92B2B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A03515A6217F00D92B2B /* SenTestingKit.framework */; };
+		F482A03715A6217F00D92B2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A00C15A6217E00D92B2B /* UIKit.framework */; };
+		F482A03815A6217F00D92B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F482A00E15A6217E00D92B2B /* Foundation.framework */; };
+		F482A04015A6217F00D92B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F482A03E15A6217F00D92B2B /* InfoPlist.strings */; };
+		F482A04315A6217F00D92B2B /* DrawImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F482A04215A6217F00D92B2B /* DrawImagesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F482A03915A6217F00D92B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4829FFF15A6217E00D92B2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F482A00715A6217E00D92B2B;
+			remoteInfo = DrawImages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F482A00815A6217E00D92B2B /* DrawImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F482A00C15A6217E00D92B2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F482A00E15A6217E00D92B2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F482A01015A6217E00D92B2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F482A01215A6217E00D92B2B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F482A01415A6217E00D92B2B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F482A01815A6217E00D92B2B /* DrawImages-Info.plist */ = {isa = PBXFileReference; path = "DrawImages-Info.plist"; sourceTree = "<group>"; };
+		F482A01A15A6217E00D92B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F482A01C15A6217E00D92B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F482A01E15A6217E00D92B2B /* DrawImages-Prefix.pch */ = {isa = PBXFileReference; path = "DrawImages-Prefix.pch"; sourceTree = "<group>"; };
+		F482A01F15A6217E00D92B2B /* DIAppDelegate.h */ = {isa = PBXFileReference; path = DIAppDelegate.h; sourceTree = "<group>"; };
+		F482A02015A6217E00D92B2B /* DIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIAppDelegate.m; sourceTree = "<group>"; };
+		F482A02315A6217E00D92B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F482A02615A6217E00D92B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F482A02815A6217F00D92B2B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		F482A02A15A6217F00D92B2B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		F482A02C15A6217F00D92B2B /* DIViewController.h */ = {isa = PBXFileReference; path = DIViewController.h; sourceTree = "<group>"; };
+		F482A02D15A6217F00D92B2B /* DIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIViewController.m; sourceTree = "<group>"; };
+		F482A03415A6217F00D92B2B /* DrawImagesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawImagesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F482A03515A6217F00D92B2B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F482A03D15A6217F00D92B2B /* DrawImagesTests-Info.plist */ = {isa = PBXFileReference; path = "DrawImagesTests-Info.plist"; sourceTree = "<group>"; };
+		F482A03F15A6217F00D92B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F482A04115A6217F00D92B2B /* DrawImagesTests.h */ = {isa = PBXFileReference; path = DrawImagesTests.h; sourceTree = "<group>"; };
+		F482A04215A6217F00D92B2B /* DrawImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawImagesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F482A00515A6217E00D92B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A00D15A6217E00D92B2B /* UIKit.framework in Frameworks */,
+				F482A00F15A6217E00D92B2B /* Foundation.framework in Frameworks */,
+				F482A01115A6217E00D92B2B /* CoreGraphics.framework in Frameworks */,
+				F482A01315A6217E00D92B2B /* GLKit.framework in Frameworks */,
+				F482A01515A6217E00D92B2B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F482A03015A6217F00D92B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A03615A6217F00D92B2B /* SenTestingKit.framework in Frameworks */,
+				F482A03715A6217F00D92B2B /* UIKit.framework in Frameworks */,
+				F482A03815A6217F00D92B2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4829FFD15A6217E00D92B2B = {
+			isa = PBXGroup;
+			children = (
+				F482A01615A6217E00D92B2B /* DrawImages */,
+				F482A03B15A6217F00D92B2B /* DrawImagesTests */,
+				F482A00B15A6217E00D92B2B /* Frameworks */,
+				F482A00915A6217E00D92B2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F482A00915A6217E00D92B2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F482A00815A6217E00D92B2B /* DrawImages.app */,
+				F482A03415A6217F00D92B2B /* DrawImagesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F482A00B15A6217E00D92B2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F482A00C15A6217E00D92B2B /* UIKit.framework */,
+				F482A00E15A6217E00D92B2B /* Foundation.framework */,
+				F482A01015A6217E00D92B2B /* CoreGraphics.framework */,
+				F482A01215A6217E00D92B2B /* GLKit.framework */,
+				F482A01415A6217E00D92B2B /* OpenGLES.framework */,
+				F482A03515A6217F00D92B2B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F482A01615A6217E00D92B2B /* DrawImages */ = {
+			isa = PBXGroup;
+			children = (
+				F482A01F15A6217E00D92B2B /* DIAppDelegate.h */,
+				F482A02015A6217E00D92B2B /* DIAppDelegate.m */,
+				F482A02215A6217E00D92B2B /* MainStoryboard_iPhone.storyboard */,
+				F482A02515A6217E00D92B2B /* MainStoryboard_iPad.storyboard */,
+				F482A02815A6217F00D92B2B /* Shader.fsh */,
+				F482A02A15A6217F00D92B2B /* Shader.vsh */,
+				F482A02C15A6217F00D92B2B /* DIViewController.h */,
+				F482A02D15A6217F00D92B2B /* DIViewController.m */,
+				F482A01715A6217E00D92B2B /* Supporting Files */,
+			);
+			path = DrawImages;
+			sourceTree = "<group>";
+		};
+		F482A01715A6217E00D92B2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F482A01815A6217E00D92B2B /* DrawImages-Info.plist */,
+				F482A01915A6217E00D92B2B /* InfoPlist.strings */,
+				F482A01C15A6217E00D92B2B /* main.m */,
+				F482A01E15A6217E00D92B2B /* DrawImages-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F482A03B15A6217F00D92B2B /* DrawImagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F482A04115A6217F00D92B2B /* DrawImagesTests.h */,
+				F482A04215A6217F00D92B2B /* DrawImagesTests.m */,
+				F482A03C15A6217F00D92B2B /* Supporting Files */,
+			);
+			path = DrawImagesTests;
+			sourceTree = "<group>";
+		};
+		F482A03C15A6217F00D92B2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F482A03D15A6217F00D92B2B /* DrawImagesTests-Info.plist */,
+				F482A03E15A6217F00D92B2B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F482A00715A6217E00D92B2B /* DrawImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F482A04615A6217F00D92B2B /* Build configuration list for PBXNativeTarget "DrawImages" */;
+			buildPhases = (
+				F482A00415A6217E00D92B2B /* Sources */,
+				F482A00515A6217E00D92B2B /* Frameworks */,
+				F482A00615A6217E00D92B2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawImages;
+			productName = DrawImages;
+			productReference = F482A00815A6217E00D92B2B /* DrawImages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F482A03315A6217F00D92B2B /* DrawImagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F482A04915A6217F00D92B2B /* Build configuration list for PBXNativeTarget "DrawImagesTests" */;
+			buildPhases = (
+				F482A02F15A6217F00D92B2B /* Sources */,
+				F482A03015A6217F00D92B2B /* Frameworks */,
+				F482A03115A6217F00D92B2B /* Resources */,
+				F482A03215A6217F00D92B2B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F482A03A15A6217F00D92B2B /* PBXTargetDependency */,
+			);
+			name = DrawImagesTests;
+			productName = DrawImagesTests;
+			productReference = F482A03415A6217F00D92B2B /* DrawImagesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4829FFF15A6217E00D92B2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DI;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F482A00215A6217E00D92B2B /* Build configuration list for PBXProject "DrawImages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4829FFD15A6217E00D92B2B;
+			productRefGroup = F482A00915A6217E00D92B2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F482A00715A6217E00D92B2B /* DrawImages */,
+				F482A03315A6217F00D92B2B /* DrawImagesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F482A00615A6217E00D92B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A01B15A6217E00D92B2B /* InfoPlist.strings in Resources */,
+				F482A02415A6217E00D92B2B /* MainStoryboard_iPhone.storyboard in Resources */,
+				F482A02715A6217E00D92B2B /* MainStoryboard_iPad.storyboard in Resources */,
+				F482A02915A6217F00D92B2B /* Shader.fsh in Resources */,
+				F482A02B15A6217F00D92B2B /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F482A03115A6217F00D92B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A04015A6217F00D92B2B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F482A03215A6217F00D92B2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F482A00415A6217E00D92B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A01D15A6217E00D92B2B /* main.m in Sources */,
+				F482A02115A6217E00D92B2B /* DIAppDelegate.m in Sources */,
+				F482A02E15A6217F00D92B2B /* DIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F482A02F15A6217F00D92B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482A04315A6217F00D92B2B /* DrawImagesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F482A03A15A6217F00D92B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F482A00715A6217E00D92B2B /* DrawImages */;
+			targetProxy = F482A03915A6217F00D92B2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F482A01915A6217E00D92B2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F482A01A15A6217E00D92B2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F482A02215A6217E00D92B2B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F482A02315A6217E00D92B2B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F482A02515A6217E00D92B2B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F482A02615A6217E00D92B2B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F482A03E15A6217F00D92B2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F482A03F15A6217F00D92B2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F482A04415A6217F00D92B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F482A04515A6217F00D92B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F482A04715A6217F00D92B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawImages/DrawImages-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "DrawImages/DrawImages-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F482A04815A6217F00D92B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawImages/DrawImages-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "DrawImages/DrawImages-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F482A04A15A6217F00D92B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawImages.app/DrawImages";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawImages/DrawImages-Prefix.pch";
+				INFOPLIST_FILE = "DrawImagesTests/DrawImagesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F482A04B15A6217F00D92B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawImages.app/DrawImages";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawImages/DrawImages-Prefix.pch";
+				INFOPLIST_FILE = "DrawImagesTests/DrawImagesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F482A00215A6217E00D92B2B /* Build configuration list for PBXProject "DrawImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F482A04415A6217F00D92B2B /* Debug */,
+				F482A04515A6217F00D92B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F482A04615A6217F00D92B2B /* Build configuration list for PBXNativeTarget "DrawImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F482A04715A6217F00D92B2B /* Debug */,
+				F482A04815A6217F00D92B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F482A04915A6217F00D92B2B /* Build configuration list for PBXNativeTarget "DrawImagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F482A04A15A6217F00D92B2B /* Debug */,
+				F482A04B15A6217F00D92B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4829FFF15A6217E00D92B2B /* Project object */;
+}
