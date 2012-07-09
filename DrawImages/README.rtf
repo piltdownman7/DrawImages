@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red92\green38\blue153;\red63\green110\blue116;
+}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab560
+\pard\tx560\pardeftab560\pardirnatural
+
+\f0\fs22 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  Draw Images\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by Brett Graham on 12-07-09.\cf0 \
+\cf2 //  Copyright (c) 2012 Mobile Map Solutions. All rights reserved.\cf0 \
+\cf2 //
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+This project is a demonstration of a Open GL ES wrapper used to write a large number of Sprites onto the Screen.  This allows single sprites, sprites along polyline and full sprite fills of polygons  (not clipped textures.  \
+\
+I wrote this code when writing Mobile Map Navigator as the IHS chart standard includes hundreds of 'icons' in the form of bouys, beacons, etc... In that application you never really knew when an icon would be reused, and several times the same icon is used to describe multiple objects, which sometimes where the same type of chart object and sometimes a different type all together.\
+\
+However to put it in a bigger package that provides easy feedback I wrote some wrapper code in the form of a really basic sprite drawing program.  This application contains four main components:\
+\
+1: The default iOS delegates and a 
+\f0\fs22 \cf3 \CocoaLigature0 GLKViewController 
+\f1\fs24 \cf0 \CocoaLigature1 view controller which draws the sprites, handles the button events and touch listeners. Included in this is a header of constants and a Category to extend functionality to 
+\f0\fs22 \cf3 \CocoaLigature0 NSString
+\f1\fs24 \cf0 \CocoaLigature1 .\
+\
+2: The Icon Drawing Engine which is this entire project serves a demonstration for. This includes two classes 
+\f0\fs22 \cf4 \CocoaLigature0 DIIconEngine 
+\f1\fs24 \cf0 \CocoaLigature1 and 
+\f0\fs22 \cf4 \CocoaLigature0 DISprite
+\f1\fs24 \cf0 \CocoaLigature1 .  
+\f0\fs22 \cf4 \CocoaLigature0 DISprite
+\f1\fs24 \cf0 \CocoaLigature1  loads, stores and renders the sprites.  
+\f0\fs22 \cf4 \CocoaLigature0 DIIconEngine
+\f1\fs24 \cf0 \CocoaLigature1  keeps a store of what images have been loaded and which have not, manages to allocation of the sprites and the rendering either of single sprites, sprites on a polyline, or a filled polygon.  Because of my personal dislike of the look of simply tiling a polygon and having edges clipped this polygon fills only fills with full icons.\
+\
+3: The table of available Shapes which is only really used to allow the user to change the icon they want to use in this denomination.  
+\f0\fs22 \cf4 \CocoaLigature0 DIIconCollection 
+\f1\fs24 \cf0 \CocoaLigature1 is a basic UITableview DataProvider and Delegate, which keeps the list of icons we are using in this small demo.  
+\f0\fs22 \cf4 \CocoaLigature0 DIIcon 
+\f1\fs24 \cf0 \CocoaLigature1 is a very basic class to keep the name of the icons and their filename. \
+\
+4: These is a set of basic shapes, subclassed from 
+\f0\fs22 \cf4 \CocoaLigature0 DIObject
+\f1\fs24 \cf0 \CocoaLigature1  and include a point(
+\f0\fs22 \cf4 \CocoaLigature0 DIPoint
+\f1\fs24 \cf0 \CocoaLigature1 ), line(
+\f0\fs22 \cf4 \CocoaLigature0 DILine
+\f1\fs24 \cf0 \CocoaLigature1 ) and an area polygon(
+\f0\fs22 \cf4 \CocoaLigature0 DIArea
+\f1\fs24 \cf0 \CocoaLigature1 ).   These are simply used for storing the objects displayed on screen and are neither fancy or very efficient. \
+\
+Note: Does not handle rotations.  To do this the effect much be reset on rotation and send to the Icon engine, and the tap listener must implement a translation depending on orientation. \
+\
+}
